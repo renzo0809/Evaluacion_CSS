@@ -13,6 +13,7 @@ body{
   border-top-left-radius: 10px;
   border-top-right-radius:10px;
   height:110px;
+  animation: MiAnimacion 1s;
 }
 #Cabecera h1{
 text-shadow: 2px 2px #02010a;
@@ -101,6 +102,20 @@ footer section ul{
   padding-right: 10px;
 }
 /*--------------------------------------------*/
+/*ANIMACION---------------------------------------------*/
+@-webkit-keyframes MiAnimacion {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+
+}
+/*------------------------------------------------------*/
 /*---------------VERSION MOVIL------------------------------*/
 @media (max-width:900px) {
 #Contenido{
@@ -123,11 +138,14 @@ footer section ul{
   margin-top:10px;
   padding: 0;
   font-size: 1.5em;
-
-
 }
 /*--------------------------------------------*/
-
+/*IMAGENES MOVIL------------------------------*/
+.Imagen{
+  width: 100%;
+  margin:16px 10px;
+}
+/*--------------------------------------------*/
 /*--------------------------------------------*/
 /*FOOTER MOVIL--------------------------------*/
 footer section{

@@ -13,6 +13,7 @@ body{
   border-top-left-radius: 10px;
   border-top-right-radius:10px;
   height:110px;
+  animation: MiAnimacion 1s;
 }
 #Cabecera h1{
 text-shadow: 2px 2px #02010a;
@@ -74,8 +75,25 @@ img{
 #Contenedor2 #Imagen2,#Contenedor2 #Imagen3{
   width:40%;
 }
+
 #Imagen2 img, #Imagen3 img{
   width:100%;
+}
+
+/*ANIMACION SEGUNDA IMAGEN*/
+#Imagen2{
+  transition: transform 0.5s;
+}
+#Imagen2:hover{
+transform:rotate(10deg);
+}
+/*ANIMACION TERCERA IMAGEN*/
+#Imagen3{
+  transition:transform 0.5s;
+}
+#Imagen3:hover{
+  transform:translate(3px,-2px);
+}
 }
 /*--------------------------------------------*/
 
@@ -115,6 +133,20 @@ footer section ul{
   padding-right: 10px;
 }
 /*--------------------------------------------*/
+/*ANIMACION---------------------------------------------*/
+@-webkit-keyframes MiAnimacion {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+
+}
+/*------------------------------------------------------*/
 /*---------------VERSION MOVIL------------------------------*/
 @media (max-width:900px) {
 #Contenido{
