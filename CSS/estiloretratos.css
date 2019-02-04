@@ -53,6 +53,17 @@ font-size: 40px;
 .Imagen img{
   width: 100%;
 }
+#Imagen1{
+  filter: blur(10px);
+}
+
+.Imagen:nth-child(even){
+  filter:grayscale(100%);
+}
+
+#Imagen3{
+  filter:sepia();
+}
 /*--------------------------------------*/
 /*EFECTOS DEL FOOTER--------------------*/
 footer{
